@@ -14,8 +14,8 @@ const About = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, translateY: 0 } : { opacity: 0, translateY: 50 }}
             transition={{ duration: 1 }}
-            className=' flex justify-between my-8 items-center mb-40'>
-            <div className=' flex flex-col  text-gray-300 pr-20'>
+            className=' flex justify-between mb-40 items-center flex-col-reverse lg:flex-row w-11/12 mx-auto'>
+            <div className=' flex flex-col text-gray-300 lg:pr-20 text-center lg:text-left items-center lg:items-start mt-10 lg:mt-0'>
                 <h2 className=' text-3xl font-semibold'>Secure and Encryption</h2>
                 <p className='mt-8 opacity-80'>Data protection is one of the main things for a auth server and we have taken that seriously. Here is a brief on how the data gets encrypted and stored in the database.</p>
                 <p className=' mt-6 opacity-80'>Password protection is another core functionality for an auth server and we have taken that seriously. Here is a brief on how the password gets salted, hashed, encrypted, and stored in the database.</p>
@@ -47,7 +47,7 @@ const About = () => {
                     <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
                 </button>
             </div>
-            <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm p-4 relative h-[25rem]">
+            <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm p-4 relative h-[22rem] lg:h-[25rem]">
                 <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
                 <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
                 <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />

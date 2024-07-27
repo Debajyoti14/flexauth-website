@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative overflow-x-hidden w-10/12 mx-auto`}>
+      <body className={`${inter.className} relative overflow-x-hidden md:w-10/12 mx-auto`}>
         <Navbar />
         {children}
       </body>
