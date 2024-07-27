@@ -29,7 +29,7 @@ const Hero = () => {
                     Flexauth is a flexible, blazingly fast 🦀, and secure auth system that
                     you can use for your project/company* . Need to add a specific feature
                     as you need? Change the code as you like and deploy it on your
-                    servers. Here is the most flexible auth system for all your needs.
+                    servers.
                 </motion.p>
                 <motion.a
                     initial={{ opacity: 0, y: 50 }}
