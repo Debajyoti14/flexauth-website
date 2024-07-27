@@ -1,9 +1,20 @@
-import React from 'react'
+"use client";
+
+import React, { useRef } from 'react'
 import { EvervaultCard, Icon } from './ui/evervault-card'
+import { motion, useInView } from 'framer-motion'
 
 const About = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
-        <div className=' flex justify-between my-5 items-center'>
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, translateY: 0 } : { opacity: 0, translateY: 50 }}
+            transition={{ duration: 1 }}
+            className=' flex justify-between my-8 items-center mb-40'>
             <div className=' flex flex-col  text-gray-300 pr-20'>
                 <h2 className=' text-3xl font-semibold'>Secure and Encryption</h2>
                 <p className='mt-8 opacity-80'>Data protection is one of the main things for a auth server and we have taken that seriously. Here is a brief on how the data gets encrypted and stored in the database.</p>
@@ -43,10 +54,8 @@ const About = () => {
                 <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
                 <EvervaultCard text="Secure" />
-
-
             </div>
-        </div>
+        </motion.div>
     )
 }
 
