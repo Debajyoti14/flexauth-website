@@ -1,14 +1,14 @@
-import { BentoGridSecondDemo } from "@/components/Features";
+import { BentoGridThirdDemo } from "@/components/Features";
 import { CanvasRevealEffectDemo } from "@/components/GetStarted";
+import Secure from "@/components/Secure";
 import Hero from "@/components/Hero";
-import Usecase from "@/components/Usecase";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Usecase />
-      <BentoGridSecondDemo />
+      <Secure />
+      <BentoGridThirdDemo />
       <CanvasRevealEffectDemo />
     </main>
   );
