@@ -12,8 +12,8 @@ const Navbar = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className='absolute mx-auto w-screen z-50 mt-5 text-gray-300'>
-            <div className='flex justify-between items-center px-10 rounded-full py-2 mx-5 sticky top-5' >
+            className='absolute mx-auto w-full z-50 mt-5 text-gray-300'>
+            <div className='flex justify-between items-center rounded-full py-2 sticky top-5' >
                 <div className=' flex items-center gap-2'>
                     <img src="/logo_tr_w.png" alt="" className='w-10' />
                     <h1 className=' text-2xl font-semibold'>Flexauth </h1>
