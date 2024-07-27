@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { FiArrowUpRight } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
@@ -10,22 +13,33 @@ const Hero = () => {
                 fill="white"
             />
             <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0 flex flex-col items-center">
-                <h1
+                <motion.h1
                     className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mt-16 mb-5"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
                 >
                     Flexauth fast and flexible <br /> authentication system
-                </h1>
-                <p className="mt-4 font-normal text-base text-neutral-300 max-w-xl text-center mx-auto">
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.75, duration: 1 }}
+                    className="mt-4 font-normal text-base text-neutral-300 max-w-xl text-center mx-auto">
                     Flexauth is a flexible, blazingly fast 🦀, and secure auth system that
                     you can use for your project/company* . Need to add a specific feature
                     as you need? Change the code as you like and deploy it on your
                     servers. Here is the most flexible auth system for all your needs.
-                </p>
-                <a href="https://github.com/Rajdip019/flexauth" target="_blank">
+                </motion.p>
+                <motion.a
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1, duration: 1 }}
+                    href="https://github.com/Rajdip019/flexauth" target="_blank">
                     <button className="inline-flex h-12 mt-8 w-fit animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         Checkout on Github <FiArrowUpRight size={20} className="ml-1" />
                     </button>
-                </a>
+                </motion.a>
             </div>
         </div>
     );
