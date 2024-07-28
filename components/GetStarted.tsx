@@ -8,11 +8,11 @@ import { MdOutlinePublishedWithChanges } from "react-icons/md";
 
 export function LetsGetStarted() {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto mt-20">
             <h2 className="pl-4 text-center md:text-left mx-auto text-xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                 Let&apos;s get started
             </h2>
-            <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
+            <div className="pt-14 pb-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
                 <Card title="Clone & Proceed for Local Setup" icon={<FaGithub size={40} />}>
                     <CanvasRevealEffect
                         animationSpeed={5.1}
