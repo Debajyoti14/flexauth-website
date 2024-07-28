@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
-        <div className="w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden md:h-screen">
+        <div className="w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden md:h-screen" id="hero">
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="white"
@@ -29,7 +29,7 @@ const Hero = () => {
                     Flexauth is a flexible, blazingly fast 🦀, and secure auth system that
                     you can use for your project/company* . Need to add a specific feature
                     as you need? Change the code as you like and deploy it on your
-                    servers. Here is the most flexible auth system for all your needs.
+                    servers.
                 </motion.p>
                 <motion.a
                     initial={{ opacity: 0, y: 50 }}

@@ -14,12 +14,11 @@ const About = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, translateY: 0 } : { opacity: 0, translateY: 50 }}
             transition={{ duration: 1 }}
-            className=' flex justify-between mb-40 items-center flex-col-reverse lg:flex-row w-11/12 mx-auto'>
-            <div className=' flex flex-col text-gray-300 lg:pr-20 text-center lg:text-left items-center lg:items-start mt-10 lg:mt-0'>
-                <h2 className=' text-3xl font-semibold'>Secure and Encryption</h2>
+            className='flex justify-between mb-40 items-center flex-col-reverse lg:flex-row mx-auto'>
+            <div className='flex flex-col text-gray-300 lg:pr-20 text-center lg:text-left items-center lg:items-start mt-10 lg:mt-0'>
+                <h2 className='text-3xl font-semibold'>Secure and Encryption</h2>
                 <p className='mt-8 opacity-80'>Data protection is one of the main things for a auth server and we have taken that seriously. Here is a brief on how the data gets encrypted and stored in the database.</p>
-                <p className=' mt-6 opacity-80'>Password protection is another core functionality for an auth server and we have taken that seriously. Here is a brief on how the password gets salted, hashed, encrypted, and stored in the database.</p>
-                <p className=' mt-6 opacity-80'>To know more about data security click the button below.</p>
+                <p className='mt-6 opacity-80'>Password protection is another core functionality for an auth server and we have taken that seriously. Here is a brief on how the password gets salted, hashed, encrypted, and stored in the database.</p>
                 <button className="bg-slate-800 w-fit mt-8 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
                     <span className="absolute inset-0 overflow-hidden rounded-full">
                         <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />

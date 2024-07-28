@@ -1,15 +1,19 @@
-import { BentoGridThirdDemo } from "@/components/Features";
-import { CanvasRevealEffectDemo } from "@/components/GetStarted";
+import { Features } from "@/components/Features";
+import { LetsGetStarted } from "@/components/GetStarted";
 import Secure from "@/components/Secure";
 import Hero from "@/components/Hero";
+import UseCases from "@/components/UseCases";
+import Teams from "@/components/Teams";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Secure />
-      <BentoGridThirdDemo />
-      <CanvasRevealEffectDemo />
+      <UseCases />
+      <Features />
+      <LetsGetStarted />
+      <Teams />
     </main>
   );
 }

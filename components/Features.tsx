@@ -2,25 +2,27 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { FaChrome, FaEye, FaHeadSideVirus, FaLock, FaUserLock, FaWindows } from "react-icons/fa";
 import { SiAuthelia } from "react-icons/si";
 import { RiAdminFill, RiComputerFill } from "react-icons/ri";
 
-export function BentoGridThirdDemo() {
+export function Features() {
     return (
-        <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
-            {items.map((item, i) => (
-                <BentoGridItem
-                    key={i}
-                    title={item.title}
-                    description={item.description}
-                    header={item.header}
-                    className={cn("[&>p:text-lg]", item.className)}
-                />
-            ))}
-        </BentoGrid>
+        <div className="mt-[400px]" id="features">
+            <h2 className="text-3xl font-semibold text-gray-300">Features</h2>
+            <BentoGrid className="mx-auto md:auto-rows-[20rem]">
+                {items.map((item, i) => (
+                    <BentoGridItem
+                        key={i}
+                        title={item.title}
+                        description={item.description}
+                        header={item.header}
+                        className={cn("[&>p:text-lg]", item.className)}
+                    />
+                ))}
+            </BentoGrid>
+        </div>
     );
 }
 
@@ -120,7 +122,7 @@ const SkeletonTwo = () => {
                         style={{
                             width: Math.random() * (100 - 40) + 40 + "%",
                         }}
-                        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+                        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-gray-800 w-full h-4"
                     ></motion.div>
                 </div>
             })}
@@ -248,7 +250,7 @@ const SkeletonFive = () => {
         >
             <motion.div
                 variants={variants}
-                className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black items-center"
+                className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 space-x-2 bg-white dark:bg-black items-center"
             >
                 <RiComputerFill className="rounded-full h-6 w-6" />
                 <p className="text-sm">
@@ -266,7 +268,7 @@ const SkeletonFive = () => {
             </motion.div>
             <motion.div
                 variants={variants}
-                className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black items-center"
+                className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 space-x-2 bg-white dark:bg-black items-center"
             >
                 <p className="text-sm">
                     Chrome
