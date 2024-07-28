@@ -21,16 +21,16 @@ const Navbar = () => {
                 <div className=' mt-3 md:mt-0'>
                     <ul className='flex items-center gap-6'>
                         <li className=' hover:scale-105 transition-all'>
-                            <Link href="/">Home</Link>
+                            <a href="#hero">Home</a>
                         </li>
                         <li className=' hover:scale-105 transition-all'>
-                            <Link href="/contact">Use Cases</Link>
+                            <a href="#usecases">Use Cases</a>
                         </li>
                         <li className=' hover:scale-105 transition-all'>
-                            <Link href="/contact">Features</Link>
+                            <Link href="#features">Features</Link>
                         </li>
                         <li className=' hover:scale-105 transition-all'>
-                            <Link href="/contact">Team</Link>
+                            <Link href="#teams">Team</Link>
                         </li>
                         <li className=' hover:scale-105 transition-all hidden md:block'>
                             <a target="_blank" href="https://github.com/Rajdip019/flexauth" className=' flex  items-center gap-1 border border-gray-600 rounded-full px-6 py-1.5'>

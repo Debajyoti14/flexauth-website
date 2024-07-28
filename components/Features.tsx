@@ -9,8 +9,8 @@ import { RiAdminFill, RiComputerFill } from "react-icons/ri";
 
 export function Features() {
     return (
-        <div className="mt-[400px]" id="features">
-            <h2 className="text-3xl font-semibold text-gray-300">Features</h2>
+        <div className="mt-[500px] sm:mt-[400px]" id="features">
+            <h2 className="text-center md:text-left text-3xl font-semibold text-gray-300">Features</h2>
             <BentoGrid className="mx-auto md:auto-rows-[20rem]">
                 {items.map((item, i) => (
                     <BentoGridItem
@@ -120,7 +120,7 @@ const SkeletonTwo = () => {
                         key={"skelenton-two" + i}
                         variants={variants}
                         style={{
-                            width: Math.random() * (100 - 40) + 40 + "%",
+                            maxWidth: `${100 - i * 15}%`,
                         }}
                         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-gray-800 w-full h-4"
                     ></motion.div>

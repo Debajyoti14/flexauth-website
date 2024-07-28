@@ -84,9 +84,9 @@ const UseCases = () => {
     ];
 
     return (
-        <div>
-            <h2 className="text-3xl font-semibold text-gray-300 mb-10">Use cases</h2>
-            <div className=" [perspective:1000px] relative flex flex-col mx-auto w-full  items-start justify-start mb-80">
+        <div id="usecases">
+            <h2 className="text-center md:text-left text-3xl font-semibold text-gray-300 mb-10">Use cases</h2>
+            <div className=" [perspective:1000px] relative flex flex-col mx-auto w-full  items-start justify-start mb-[100px] md:mb-80">
                 <Tabs tabs={tabs} />
             </div>
         </div>

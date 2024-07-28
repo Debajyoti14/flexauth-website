@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  scroll-behavior: smooth;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -48,6 +49,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .no-visible-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -57,3 +62,5 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+
